@@ -40,6 +40,7 @@ body
     text-align: -moz-right ;
     width: 50px;
 }
+
 {font-family:'Lato', sans-serif;font-size:16px}
 body.active
 {overflow:hidden;z-index:-1}
@@ -59,7 +60,7 @@ header ul
 header li{display:inline-block}
 a{display:block;color:#3498db;padding:10px}
 header a:hover
-{color:#217dbb;text-decoration:none;background:#eee;border-radius:4px}
+{color:#217dbb;text-decoration:none;background:#eee;border-radius: 0px 0px 30px 50px}
 header a:focus
 {color:#3498db;text-decoration:none}
 header.active{display:block}
@@ -159,8 +160,6 @@ footer{padding:50px 0}
     border-radius: 15px;
 }
 
-
-
 .mp4 {
     width: 80%;
 }
@@ -168,3 +167,6 @@ footer{padding:50px 0}
 .mp3 {
     width: 40%;
 }
+#color-liste ::marker{color: #a0cfeeff ; font-size:30px;}
+#liste-competance ::marker {color: #a0cfeeff ; font-size:30px}
+
