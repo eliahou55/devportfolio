@@ -10,7 +10,7 @@
 }
 
 :root {
-    --primary: #ec994b;
+    --primary: #a0cfee;
     --white: #ffffff;
     --bg: #f5f5f5;
 }
@@ -112,6 +112,7 @@ body {
         height: 36rem !important;
     }
     .tranding-slide .tranding-slide-img img {
+
         width: 28rem !important;
         height: 36rem !important;
     }
@@ -234,6 +235,4 @@ body {
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--primary);
 }
-
-
 
