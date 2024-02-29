@@ -95,6 +95,7 @@
     .lightbox-arrow.right {
       right: 10px;
     }
+
   </style>
 
   <!-- Ajoutez la bibliothèque jQuery (si elle n'est pas déjà incluse dans votre projet) -->
@@ -115,31 +116,17 @@
       $('.lightbox-overlay').fadeOut();
     }
 
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-      updateImage();
-    }
 
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % totalImages;
-      updateImage();
-    }
-
-    function updateImage() {
-      const currentImage = $('.project-image')[currentIndex];
-      const imageSrc = $(currentImage).attr('src');
-      $('.lightbox-image').attr('src', imageSrc);
-    }
   </script>
 </head>
 
 <body>
 <div class="section-c1bbb8">
   <div class="container center-images">
-    <h2 class="center-text">Bienvenue sur notre Plateforme d'Édition d'Articles</h2>
+    <h2 class="center-text" style="color: white"> Plateforme d'Édition d'Articles</h2>
     <p>
-      Notre projet développé en Flask offre une expérience conviviale pour la création, l'édition
-      et la publication d'articles. Découvrez ci-dessous les fonctionnalités principales de notre
+      Le projet développé en Flask offre une expérience conviviale pour la création, l'édition
+      et la publication d'articles. Découvrez ci-dessous les fonctionnalités principales de la
       plateforme.
     </p>
   </div>
@@ -149,21 +136,58 @@
   <div class="container center-images">
     <h2 class="center-text">Aperçu Visuel</h2>
     <p>
-      Explorez notre plateforme à travers ces images représentatives :
+      Explorez la plateforme à travers ces images représentatives :
     </p>
     <div class="lightbox-overlay" onclick="closeLightbox()">
-      <i class="lightbox-arrow left" onclick="prevImage()">&#9665;</i>
+
       <div class="lightbox-container">
         <img src="" alt="Lightbox Image" class="lightbox-image" onclick="nextImage()">
       </div>
-      <i class="lightbox-arrow right" onclick="nextImage()">&#9655;</i>
+
     </div>
     <img src="../image_Edit/connexion.png" alt="Project Image 1" class="project-image" onclick="openLightbox('../image_Edit/connexion.png', 0)">
-    <img src="../image_Edit/signIn.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/signIn.png', 1)">
-    <img src="../image_Edit/forgotPass.png" alt="Project Image 3" class="project-image" onclick="openLightbox('../image_Edit/forgotPass.png', 2)">
-    <img src="../image_Edit/mailDev.png" alt="Project Image 4" class="project-image" onclick="openLightbox('../image_Edit/mailDev.png', 3)">
+    <img src="../image_Edit/fonctionLogin.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/fonctionLogin.png', 1)">
+    <img src="../image_Edit/signIn.png" alt="Project Image 3" class="project-image" onclick="openLightbox('../image_Edit/signIn.png', 2)">
+    <img src="../image_Edit/fonctionRegister.png" alt="Project Image 4" class="project-image" onclick="openLightbox('../image_Edit/fonctionRegister.png', 3)">
+
   </div>
 </div>
+<br>
+<div class="section-c1bbb8">
+    <div class="container center-images">
+      <h2 style="color: white">
+        La partie visuelle de la base de données
+      </h2>
+    </div>
+</div>
+<br><br><br>
+<div class="container center-images">
+  <img src="../image_Edit/bddArticle.png" alt="Project Image 1" class="project-image" onclick="openLightbox('../image_Edit/bddArticle.png', 0)">
+  <img src="../image_Edit/bddAdmin.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/bddAdmin.png', 1)">
+
+</div>
+<br><br><br>
+<div class="section-c1bbb8">
+  <div class="container center-images">
+    <h2 style="color: white">
+      Le compte rendu du site
+    </h2>
+  </div>
+</div>
+<br><br><br>
+<div class="container center-images">
+  <img src="../image_Edit/read1.png" alt="Project Image 1" class="project-image" onclick="openLightbox('../image_Edit/read1.png', 0)">
+  <img src="../image_Edit/read2.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/read2.png', 1)">
+  <img src="../image_Edit/edit.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/edit.png', 2)">
+  <img src="../image_Edit/update.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/update.png', 3)">
+
+</div>
+
+
+
+
+
+
 
 <!-- Le reste du contenu HTML -->
 

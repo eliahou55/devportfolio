@@ -8,6 +8,35 @@
   <title>Fody Slider</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <style>
+    body {
+      position: relative;
+      background-image: url('../imgProjet/constellation.png');
+      background-size: cover;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Couleur noire avec une opacité de 0.5 (ajustez selon vos préférences) */
+      z-index: -1; /* Assurez-vous que la superposition est derrière le contenu de la page */
+    }
+
+  </style>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+  </script>
+
 
 </head>
 
@@ -25,176 +54,138 @@
         <!-- Slide-start -->
         <div class="swiper-slide tranding-slide">
           <div class="tranding-slide-img">
-            <img src="../imgProjet/generateurToken.png" alt="Tranding" style="border : 3px solid white">
-          </div>
-          <div class="tranding-slide-content">
-            <h1 class="food-price">API pax8</h1>
-            <div class="tranding-slide-content-bottom">
-              <h3 class="food-name">
-                code generant un token grace a la recuperation de l'id
-              </h3>
-              <h3 class="food-rating">
-                <span></span>
-                <!--<div class="rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>-->
-              </h3>
-            </div>
-          </div>
-        </div>
-        <!-- Slide-end -->
-        <!-- Slide-start -->
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="../imgProjet/compositionFacture.png" alt="Tranding" style="border : 3px solid white">
-          </div>
-          <div class="tranding-slide-content">
-            <h1 class="food-price">pax8</h1>
-            <div class="tranding-slide-content-bottom">
-              <h3 class="food-name">
-                selectionner les affichage de la facture
-              </h3>
-              <h3 class="food-rating">
-                <!--<span>4.5</span>
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>-->
-              </h3>
-            </div>
-          </div>
-        </div>
-        <!-- Slide-end -->
-        <!-- Slide-start -->
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="../imgProjet/facture%20mere.png" alt="Tranding" style="border : 3px solid white">
-          </div>
-          <div class="tranding-slide-content">
-            <h1 class="food-price">pax8</h1>
-            <div class="tranding-slide-content-bottom">
-              <h3 class="food-name">
-                une facture mere
-              </h3>
-              <!--<h3 class="food-rating">
-                <span>4.5</span>
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
+            <a href="../imgProjet/generateurToken.png" data-lightbox="projet1" data-title="pax8">
+
+              <img src="../imgProjet/generateurToken.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">API pax8</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name">
+                    code generant un token grace a la recuperation de l'id
+                  </h3>
+                  <h3 class="food-rating">
+
+                  </h3>
                 </div>
-              </h3>-->
-            </div>
+              </div>
+            </a>
           </div>
+
+        </div>
+
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/compositionFacture.png" data-lightbox="projet1" data-title="pax8">
+
+              <img src="../imgProjet/compositionFacture.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">pax8</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name">
+                    selectionner les affichages de la facture
+                  </h3>
+                  <h3 class="food-rating">
+
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/facture%20mere.png" data-lightbox="projet1" data-title="pax8">
+
+              <img src="../imgProjet/facture%20mere.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">pax8</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name">
+                    une facture mere
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/factureFille.png" data-lightbox="projet1" data-title="sellsy">
+
+              <img src="../imgProjet/factureFille.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">sellsy</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name">
+                    une facture fille qui se retrouve grace a la date
+                  </h3>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
         </div>
         <!-- Slide-end -->
         <!-- Slide-start -->
         <div class="swiper-slide tranding-slide">
           <div class="tranding-slide-img">
-            <img src="../imgProjet/factureFille.png" alt="Tranding" style="border : 3px solid white">
-          </div>
-          <div class="tranding-slide-content">
-            <h1 class="food-price">sellsy</h1>
-            <div class="tranding-slide-content-bottom">
-              <h3 class="food-name">
-               une facture fille qui se retrouve grace a la date
-              </h3>
-              <!--<h3 class="food-rating">
-                <span>4.5</span>
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
+            <a href="../imgProjet/meteor%20listing.png" data-lightbox="projet1" data-title="Meteor">
+
+              <img src="../imgProjet/meteor%20listing.png" alt="Tranding" style="border-left : 3px solid white; border-right: 3px solid black">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    application d<h2 style="color: black"> es models</h2> sur navigateur via Meteor
+                  </h2>
+
                 </div>
-              </h3>-->
-            </div>
+              </div>
+            </a>
           </div>
+
         </div>
-        <!-- Slide-end -->
-        <!-- Slide-start -->
+
         <div class="swiper-slide tranding-slide">
           <div class="tranding-slide-img">
-            <img src="../imgProjet/meteor%20listing.png" alt="Tranding" style="border-left : 3px solid white; border-right: 3px solid black">
-          </div>
-          <div class="tranding-slide-content">
-            <h1 class="food-price">Meteor</h1>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="food-name">
-                application d<h2 style="color: black"> es models</h2> sur navigateur via Meteor
-              </h2>
-              <!--<h3 class="food-rating">
-                <span>4.5</span>
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
+            <a href="../imgProjet/meteorCreation.png" data-lightbox="projet1" data-title="Meteor">
+
+              <img src="../imgProjet/meteorCreation.png" alt="Tranding" style="border-left: 3px solid black ;border-right:3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price" style="color: black">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 style="color: black">
+                    creation de la facture via meteor
+                  </h2>
+
                 </div>
-              </h3>-->
-            </div>
+              </div>
+            </a>
           </div>
+
         </div>
-        <!-- Slide-end -->
-        <!-- Slide-start -->
+
         <div class="swiper-slide tranding-slide">
           <div class="tranding-slide-img">
-            <img src="../imgProjet/meteorCreation.png" alt="Tranding" style="border-left: 3px solid black ;border-right:3px solid white">
-          </div>
-          <div class="tranding-slide-content">
-            <h1 class="food-price">Meteor</h1>
-            <div class="tranding-slide-content-bottom">
-              <h2 style="color: black">
-                creation de la facture via meteor
-              </h2>
-              <!--<h3 class="food-rating">
-                <span>4.5</span>
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
+            <a href="../imgProjet/bddMongo.png" data-lightbox="projet1" data-title="Meteor">
+
+              <img src="../imgProjet/bddMongo.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">Mongo DB</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    gestion de la base de donnes
+                  </h2>
+
                 </div>
-              </h3>-->
-            </div>
+              </div>
+            </a>
           </div>
-        </div>
-        <!-- Slide-end -->
-        <!-- Slide-start -->
-        <div class="swiper-slide tranding-slide">
-          <div class="tranding-slide-img">
-            <img src="../imgProjet/bddMongo.png" alt="Tranding" style="border : 3px solid white">
-          </div>
-          <div class="tranding-slide-content">
-            <h1 class="food-price">Mongo DB</h1>
-            <div class="tranding-slide-content-bottom">
-              <h2 class="food-name">
-                gestion de la base de donnes
-              </h2>
-              <!--<h3 class="food-rating">
-                <span>4.5</span>
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-              </h3>-->
-            </div>
-          </div>
+
         </div>
         <!-- Slide-end -->
       </div>
@@ -217,6 +208,9 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
+
+
 </body>
 
 </html>
+
