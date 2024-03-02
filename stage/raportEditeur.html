@@ -95,6 +95,18 @@
     .lightbox-arrow.right {
       right: 10px;
     }
+    #zoneTexte {
+      background-color: rgba(255, 255, 255, 0.3); /* Fond blanc avec une opacité de 0.9 */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      width: 100%;
+      text-align: left;
+    }
+
+
 
   </style>
 
@@ -123,12 +135,16 @@
 <body>
 <div class="section-c1bbb8">
   <div class="container center-images">
-    <h2 class="center-text" style="color: white"> Plateforme d'Édition d'Articles</h2>
-    <p>
-      Le projet développé en Flask offre une expérience conviviale pour la création, l'édition
-      et la publication d'articles. Découvrez ci-dessous les fonctionnalités principales de la
-      plateforme.
-    </p>
+    <h2 class="center-text" style="color: white" > Plateforme d'Édition d'Articles</h2>
+    <div id="zoneTexte">
+      <h2>Les notions à avoir</h2>
+      <ul>
+        <li><b>Flask</b> est un framework web minimaliste pour Python.</li>
+        <li><b>MailDev</b> est un outil de développement facilitant le test des e-mails en créant un serveur SMTP local.</li>
+        <li><b>PostgreSQL</b> est un système de gestion de base de données relationnelle open-source.</li>
+        <li><b>pgAdmin 4 </b>est une interface open-source pour gérer les bases de données PostgreSQL. </li>
+      </ul>
+    </div>
   </div>
 </div>
 
