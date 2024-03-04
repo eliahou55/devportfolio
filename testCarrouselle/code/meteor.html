@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fody Slider</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <style>
+    body {
+      position: relative;
+      background-image: url('../imgProjet/constellation.png');
+      background-size: cover;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Couleur noire avec une opacité de 0.5 (ajustez selon vos préférences) */
+      z-index: -1; /* Assurez-vous que la superposition est derrière le contenu de la page */
+    }
+    #zoneTexte {
+      background-color: rgba(255, 255, 255, 0.1); /* Fond blanc avec une opacité de 0.9 */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      width: 100%;
+      color: honeydew;
+    }
+    ul {
+      list-style-type: disc; /* Utilisation de points comme marqueurs */
+      padding-left: 20px; /* Espacement à gauche pour la liste à puces */
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+
+
+  </style>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+  </script>
+
+
+</head>
+
+<body>
+<br>
+<br>
+<br>
+<h1 style="text-align: center; color: #c1bbb8">Éditeur de factures Meteor</h1>
+<br>
+<div id="zoneTexte">
+  <h2>Éditeur de factures</h2>
+  <p>Le projet de développement présenté repose sur le framework Meteor et vise à créer un système de gestion de factures complet, permettant aux utilisateurs de créer, commenter, lister, modifier, supprimer et publier des factures. Le système est également doté d'une gestion des comptes, avec des rôles distincts pour les administrateurs et les utilisateurs.</p>
+</div>
+
+<div id="zoneTexte">
+  <h2>Les notions à avoir </h2>
+  <ul>
+    <li>.<b>Meteor </b>est un framework <b>JavaScript full-stack</b> simplifiant le développement d'applications web en intégrant des fonctionnalités côté client et côté serveur dans un environnement unifié..</li>
+    <li>.<b>MongoDB</b> est une base de données NoSQL orientée document.</li>
+    <li>.<b>Blaze </b> est la bibliothèque JavaScript de Meteor pour créer des interfaces utilisateur réactives de manière simple.</li>
+  </ul>
+</div>
+<div id="zoneTexte">
+  <h2>Fonctionnalités Principales:</h2>
+  <br>
+  <ol>
+    <li><strong>Authentification et Autorisation:</strong>
+      <ul>
+        <li>Création sécurisée de compte.</li>
+        <li>Authentification permettant la connexion.</li>
+        <li>Gestion des rôles (admin, utilisateur).</li>
+      </ul>
+    </li>
+    <br>
+    <li><strong>Gestion des Factures:</strong>
+      <ul>
+        <li>Création avec détails (client, articles, quantités, prix).</li>
+        <li>Commentaires associés à chaque facture.</li>
+        <li>Listage complet avec filtres et recherche.</li>
+      </ul>
+    </li>
+    <br>
+    <li><strong>Modification et Suppression:</strong>
+      <ul>
+        <li>Modification des détails d'une facture.</li>
+        <li>Suppression avec confirmation.</li>
+      </ul>
+    </li>
+    <br>
+    <li><strong>Publication des Factures:</strong>
+      <ul>
+        <li>Publication pour rendre accessible aux autres utilisateurs.</li>
+        <li>Consultation des factures publiées.</li>
+      </ul>
+    </li>
+    <br>
+    <li><strong>Interface Utilisateur Intuitive:</strong>
+      <ul>
+        <li>Conviviale pour une navigation facile.</li>
+        <li>Mises à jour en temps réel avec Blaze.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+<br><h1 class="text-center section-heading">Faites défiler </h1>
+<br>
+<section id="tranding">
+  <div class="container">
+
+  </div>
+  <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/inscriptionMeteor.png" data-lightbox="projet1" data-title="pax8">
+
+              <img src="../imgProjet/inscriptionMeteor.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price"  style="color:black ">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name" style="color: black">
+                    Creation d'un nouvelle utilisateur
+                  </h3>
+                  <h3 class="food-rating">
+
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/routeMeteor.png" data-lightbox="projet1" data-title="pax8">
+
+              <img src="../imgProjet/routeMeteor.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name">
+                    Gestionnaire des routes
+                  </h3>
+                  <h3 class="food-rating">
+
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/factureMeteor.png" data-lightbox="projet1" data-title="pax8">
+
+              <img src="../imgProjet/factureMeteor.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price"  style="color:black ">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name" style="color: black">
+                    Creation d'une nouvelle facture.
+                  </h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/jsonMeteor.png" data-lightbox="projet1" data-title="sellsy">
+
+              <img src="../imgProjet/jsonMeteor.png" alt="Tranding" style="border : 3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-name">
+                    Fichier Json de lancement.
+                  </h3>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/CommentaireMeteor.png" data-lightbox="projet1" data-title="Meteor">
+
+              <img src="../imgProjet/CommentaireMeteor.png" alt="Tranding" style="border-left : 3px solid white; border-right: 3px solid black">
+              <div class="tranding-slide-content">
+                <h1 class="food-price" style="color:black ">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style="color:black ">
+                    Ajouts de commentaire sur une facture.
+                  </h2>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <a href="../imgProjet/ConnexionMeteor.png" data-lightbox="projet1" data-title="Meteor">
+
+              <img src="../imgProjet/ConnexionMeteor.png" alt="Tranding" style="border-left: 3px solid black ;border-right:3px solid white">
+              <div class="tranding-slide-content">
+                <h1 class="food-price" style="color: black">Meteor</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 style="color: black">
+                    Connexion d'un utilisateur existant.
+                  </h2>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- Slide-end -->
+      </div>
+
+      <div class="tranding-slider-control">
+        <div class="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+        <div class="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<div id="zoneTexte">
+  <h2 style="text-align: center">Conclusion:</h2>
+  <p>
+    En somme,ce projet de gestion de factures développé avec Meteor représente une solution complète et efficace pour la gestion centralisée des factures, offrant des fonctionnalités telles que la création, la modification, la suppression et la publication. L'utilisation du framework Meteor, avec son approche unifiée en JavaScript pour le frontend et le backend, a permis la création d'une application réactive et conviviale.
+  </p>
+</div>
+
+<div id="zoneTexte">
+  <h2>Apprentissages tirés du Projet:</h2>
+  <ol>
+    <li><strong>Maîtrise de Meteor :</strong> Le développement avec Meteor a permis de mieux comprendre la conception d'applications web réactives en utilisant une seule langue (JavaScript) pour le frontend et le backend.</li>
+    <li><strong>Gestion des Données en Temps Réel :</strong> La mise en œuvre de fonctionnalités en temps réel, notamment la publication instantanée des factures, a élargi ma compréhension de la synchronisation des données entre le serveur et le client.</li>
+    <li><strong>Sécurité des Applications Web :</strong> La mise en place de mesures de sécurité, telles que l'authentification sécurisée et la gestion des rôles, a renforcé mes connaissances sur la protection des données sensibles.</li>
+    <li><strong>Manipulation du DOM avec Blaze :</strong> L'utilisation de Blaze pour la création d'interfaces utilisateur a simplifié la manipulation du DOM et a ajouté une couche d'abstraction intuitive.</li>
+    <li><strong>Collaboration et Communication :</strong> La gestion des commentaires associés aux factures a souligné l'importance de la communication et de la collaboration au sein d'une application, ce qui est essentiel pour les systèmes partagés.</li>
+  </ol>
+</div>
+
+
+<br><br><br><br>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+

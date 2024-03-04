@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre Projet</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .section-c1bbb8 {
+      background-color: #c1bbb8;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .section-ffffff {
+      background-color: #f5efe3;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .center-images {
+      text-align: center;
+    }
+
+    .project-image {
+      max-width: 500px;
+      height: auto;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .lightbox-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+    }
+
+    .lightbox-container {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%;
+      max-height: 80%;
+      overflow: hidden;
+    }
+
+    .lightbox-image {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .lightbox-image.large {
+      transform: scale(1.3);
+    }
+
+    .lightbox-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2em;
+      color: #fff;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .lightbox-arrow.left {
+      left: 10px;
+    }
+
+    .lightbox-arrow.right {
+      right: 10px;
+    }
+    #zoneTexte {
+      background-color: rgba(255, 255, 255, 0.3); /* Fond blanc avec une opacité de 0.9 */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      width: 100%;
+      text-align: left;
+    }
+    #zoneTextes {
+      background-color: rgba(255, 255, 255, 0.3); /* Fond blanc avec une opacité de 0.9 */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      width: 100%;
+      text-align: left;
+    }
+    #zoneTextes {
+      display: none;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #c1bbb8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: whitesmoke;
+      color: gray;
+    }
+
+
+
+  </style>
+
+  <!-- Ajoutez la bibliothèque jQuery (si elle n'est pas déjà incluse dans votre projet) -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script>
+    let currentIndex = 0;
+    let totalImages = 0;
+
+    function openLightbox(imageSrc, index) {
+      currentIndex = index;
+      $('.lightbox-image').attr('src', imageSrc);
+      $('.lightbox-overlay').fadeIn();
+      totalImages = $('.project-image').length;
+    }
+
+    function closeLightbox() {
+      $('.lightbox-overlay').fadeOut();
+    }
+
+
+  </script>
+</head>
+
+<body>
+<div class="section-c1bbb8" style="">
+  <a href="stageBamana.html">
+    <button style="background-color: #f5efe3;color: gray;margin-right: 1000px;">Retour au rapport</button>
+  </a>
+  <div class="container center-images">
+
+    <h1 class="center-text" style="color: white" > Script de scraping d'articles </h1>
+
+    <div id="zoneTexte">
+      <h3>Comment est née le projet ?</h3>
+      <p>Le projet d'automatisation du contenu pour un site d'expertise comptable vise à simplifier et optimiser le processus de publication d'articles sur leur site web. Initialement, la mise à jour du contenu impliquait une manipulation manuelle du code HTML du site chaque fois qu'un nouvel article devait être ajouté. Pour remédier à cette tâche fastidieuse, un script Python a été développé pour automatiser ce processus.</p>
+
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<div class="section-ffffff">
+  <div class="container center-images">
+
+    <div id="zoneTexte">
+
+      <h3>Fonctionnalités clés :</h3>
+
+      <ol>
+        <li><strong>Scraping Automatisé :</strong> Le script utilise des techniques de scraping avec BeautifulSoup pour extraire des informations spécifiques, telles que la catégorie, le titre, le contenu et l'image associée, à partir d'articles provenant d'un site existant.</li>
+
+        <li><strong>Génération Dynamique de Fichiers HTML :</strong> Les données extraites sont utilisées pour remplir des templates HTML avec Jinja2, générant ainsi des fichiers HTML prêts à être intégrés au site web du cabinet.</li>
+
+        <li><strong>Organisation Structurée :</strong> Les fichiers HTML générés sont organisés dans des dossiers spécifiques en fonction des catégories d'articles, assurant une structure claire et ordonnée du contenu sur le site.</li>
+
+        <li><strong>Intégration Facile de Nouveaux Contenus :</strong> En ajoutant simplement les URL des nouveaux articles à une liste prédéfinie, le script peut automatiquement générer les pages correspondantes, simplifiant ainsi l'ajout de nouvelles publications.</li>
+
+        <li><strong>Maintenance Simplifiée :</strong> L'automatisation du processus facilite la mise à jour régulière du site, réduisant le temps et les efforts nécessaires pour maintenir un contenu informatif et actualisé.</li>
+      </ol>
+
+    </div>
+
+
+
+    <script>
+      function toggleVisibility() {
+        var zoneTextes = document.getElementById("zoneTextes");
+        if (zoneTextes.style.display === "none") {
+          zoneTextes.style.display = "block";
+        } else {
+          zoneTextes.style.display = "none";
+        }
+      }
+    </script>
+
+  </div>
+</div>
+
+<div class="section-c1bbb8">
+  <div class="container center-images">
+    <h2 style="color: white">
+      Le script en images
+    </h2>
+  </div>
+</div>
+
+<div class="section-ffffff">
+  <div class="container center-images">
+
+
+    <div class="lightbox-overlay" onclick="closeLightbox()">
+
+      <div class="lightbox-container">
+        <img src="" alt="Lightbox Image" class="lightbox-image" onclick="nextImage()">
+      </div>
+
+    </div>
+    <br>  <br>   <br>
+    <img src="../image_Edit/sracpingScript.png" alt="Project Image 1" class="project-image" onclick="openLightbox('../image_Edit/connexion.png', 0)">
+    <img src="../image_Edit/sracptTemplate.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/fonctionLogin.png', 1)">
+      <br>   <br>
+  </div>
+
+</div>
+<div class="section-c1bbb8">
+<div id="zoneTexte" style="max-width: 900px;">
+  <h2>Les notions à avoir</h2>
+  <ul>
+    <li><b>Scraping :</b> Le processus d'extraction automatique d'informations à partir de pages web. Dans ce cas, le script extrait des informations spécifiques (catégorie, titre, contenu, image) à partir des articles.</li>
+    <li><b>HTML Parsing :</b>  L'analyse du code HTML pour extraire des éléments spécifiques. BeautifulSoup est utilisé pour parcourir la structure HTML et extraire les données nécessaires.</li>
+    <li><b>Templates :</b> L'utilisation de modèles HTML avec Jinja2 permet de créer des fichiers HTML dynamiquement en insérant des données spécifiques dans des modèles préétablis.</li>
+  </ul>
+  <br>
+  <div id="zoneTexte">
+    <h2>Les outils utiliser </h2>
+    <ul>
+      <li><b>BeautifulSoup :</b> Une bibliothèque Python pour le parsing HTML, qui permet d'extraire des données de manière efficace à partir de documents HTML.</li>
+      <li><b>Jinja2 :</b>  Un moteur de template pour Python, utilisé ici pour générer des fichiers HTML en remplaçant des marqueurs de position par des données spécifiques.</li>
+    </ul>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Le reste du contenu HTML -->
+
+</body>
+
+</html>
+

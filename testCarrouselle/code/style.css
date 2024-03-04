@@ -80,6 +80,7 @@ body {
 
 #tranding {
     padding: 4rem 0;
+    margin-top: -90px;
 }
 
 @media (max-width:1440px) {

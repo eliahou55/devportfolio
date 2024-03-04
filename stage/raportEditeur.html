@@ -20,7 +20,7 @@
     }
 
     .section-ffffff {
-      background-color: #ffffff;
+      background-color: #f5efe3;
       padding: 20px;
       text-align: center;
     }
@@ -105,6 +105,34 @@
       width: 100%;
       text-align: left;
     }
+    #zoneTextes {
+      background-color: rgba(255, 255, 255, 0.3); /* Fond blanc avec une opacité de 0.9 */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      width: 100%;
+      text-align: left;
+    }
+    #zoneTextes {
+      display: none;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #c1bbb8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: whitesmoke;
+      color: gray;
+    }
 
 
 
@@ -134,8 +162,26 @@
 
 <body>
 <div class="section-c1bbb8">
+  <a href="stageBamana.html">
+  <button style="background-color: #f5efe3;color: gray;margin-right: 1000px;">Retour au rapport</button>
+    </a>
   <div class="container center-images">
+
     <h2 class="center-text" style="color: white" > Plateforme d'Édition d'Articles</h2>
+
+    <div id="zoneTexte">
+      <h2>Comment est née le projet ? </h2>
+      <p>
+        Ce projet est né du besoin d'une société d'expertise comptable qui publie régulièrement des articles sur son site web. Initialement, ces articles étaient statiquement codés en HTML, ce qui posait problème car les rédacteurs de la société ne possédaient pas de compétences en codage. Ils ont donc demandé à leur fournisseur web de développer une interface conviviale permettant de gérer dynamiquement les articles, évitant ainsi la création manuelle de pages HTML. <hr>Cette application web, réalisée avec Flask, offre une interface intuitive aux utilisateurs pour créer, éditer et publier des articles. Elle met l'accent sur la simplicité avec un tableau de bord convivial et intègre des fonctionnalités CRUD pour une gestion facile du contenu. La sécurité est renforcée par l'authentification utilisateur, chaque utilisateur ayant un profil personnalisable, et des notifications par e-mail sont incluses pour une expérience utilisateur complète.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="section-ffffff">
+  <div class="container center-images">
+
     <div id="zoneTexte">
       <h2>Les notions à avoir</h2>
       <ul>
@@ -145,6 +191,107 @@
         <li><b>pgAdmin 4 </b>est une interface open-source pour gérer les bases de données PostgreSQL. </li>
       </ul>
     </div>
+    <button onclick="toggleVisibility()">Afficher / Masquer le Cahier des Charges</button>
+
+    <div id="zoneTextes">
+      <h1>Cahier des Charges - Application Web de Gestion d'Articles</h1>
+
+      <h2>Objectif</h2>
+      <p>L'objectif principal de ce projet est de développer une application web permettant à la société d'expertise comptable de gérer dynamiquement ses articles sur le site internet. L'application doit offrir une interface conviviale, facilitant la création, l'édition, et la publication d'articles sans nécessiter de compétences en codage.</p>
+
+      <h2>Fonctionnalités Principales</h2>
+      <ol>
+        <li>
+          <h3>Authentification Utilisateur</h3>
+          <ul>
+            <li>Les utilisateurs doivent avoir la possibilité de créer un compte.</li>
+            <li>Les utilisateurs doivent pouvoir se connecter à l'application.</li>
+            <li>Les utilisateurs doivent pouvoir réinitialiser leur mot de passe de façon sécurisée.</li>
+
+          </ul>
+        </li>
+
+        <li>
+          <h3>Gestion des Articles</h3>
+          <ul>
+            <li>Les utilisateurs doivent pouvoir créer de nouveaux articles.</li>
+            <li>Les articles doivent pouvoir être édités et mis à jour.</li>
+            <li>Les utilisateurs doivent avoir la possibilité de publier ou de supprimée des articles.</li>
+            <li>Les articles doivent être enregistrés dans une base de données.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Tableau de Bord Intuitif</h3>
+          <ul>
+            <li>Mise en place d'un tableau de bord facile à utiliser.</li>
+            <li>Affichage clair des articles publiés, avec options d'édition et de suppression.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Profil Utilisateur</h3>
+          <ul>
+            <li>Chaque utilisateur doit avoir un profil personnalisable.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Notifications par E-mail</h3>
+          <ul>
+            <li>Intégration de notifications par e-mail pour les actions importantes (nouvel article, édition, etc.).</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Sécurité</h3>
+          <ul>
+            <li>Mise en place d'une authentification sécurisée.</li>
+            <li>Protection contre les vulnérabilités connues.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Technologies Utilisées</h2>
+      <ul>
+        <li>Framework : Flask (pour le développement web en Python).</li>
+        <li>Base de données : PostgreSQL (à confirmer selon les besoins spécifiques).</li>
+      </ul>
+
+      <h2>Contraintes Techniques</h2>
+      <ul>
+        <li>L'application doit être compatible avec les navigateurs web modernes (Chrome, Firefox, Safari).</li>
+        <li>L'interface utilisateur doit être responsive pour une utilisation sur des appareils mobiles.</li>
+      </ul>
+
+      <h2>Livrables Attendus</h2>
+      <ul>
+        <li>Code source complet de l'application.</li>
+        <li>Documentation d'utilisation et de déploiement.</li>
+      </ul>
+
+      <h2>Calendrier</h2>
+      <p>Le projet devrait être complété dans un délai de 4 semaines à compter de la date de début, avec des points de contrôle hebdomadaires pour assurer le suivi du développement.</p>
+    </div>
+    <script>
+      function toggleVisibility() {
+        var zoneTextes = document.getElementById("zoneTextes");
+        if (zoneTextes.style.display === "none") {
+          zoneTextes.style.display = "block";
+        } else {
+          zoneTextes.style.display = "none";
+        }
+      }
+    </script>
+
+  </div>
+</div>
+
+<div class="section-c1bbb8">
+  <div class="container center-images">
+    <h2 style="color: white">
+      La partie visuelle de l'interface de connexion
+    </h2>
   </div>
 </div>
 
@@ -161,14 +308,15 @@
       </div>
 
     </div>
+    <br>  <br>   <br>
     <img src="../image_Edit/connexion.png" alt="Project Image 1" class="project-image" onclick="openLightbox('../image_Edit/connexion.png', 0)">
     <img src="../image_Edit/fonctionLogin.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/fonctionLogin.png', 1)">
     <img src="../image_Edit/signIn.png" alt="Project Image 3" class="project-image" onclick="openLightbox('../image_Edit/signIn.png', 2)">
     <img src="../image_Edit/fonctionRegister.png" alt="Project Image 4" class="project-image" onclick="openLightbox('../image_Edit/fonctionRegister.png', 3)">
-
+    <br>  <br>   <br>
   </div>
 </div>
-<br>
+
 <div class="section-c1bbb8">
     <div class="container center-images">
       <h2 style="color: white">
@@ -176,27 +324,34 @@
       </h2>
     </div>
 </div>
-<br><br><br>
+<div class="section-ffffff">
 <div class="container center-images">
+  <br>  <br>   <br>
   <img src="../image_Edit/bddArticle.png" alt="Project Image 1" class="project-image" onclick="openLightbox('../image_Edit/bddArticle.png', 0)">
   <img src="../image_Edit/bddAdmin.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/bddAdmin.png', 1)">
-
+  <br>  <br>   <br>
 </div>
-<br><br><br>
+</div>
+
 <div class="section-c1bbb8">
   <div class="container center-images">
     <h2 style="color: white">
       Le compte rendu du site
     </h2>
+
   </div>
+
 </div>
-<br><br><br>
+
+<div class="section-ffffff">
 <div class="container center-images">
+  <br>  <br>   <br>
   <img src="../image_Edit/read1.png" alt="Project Image 1" class="project-image" onclick="openLightbox('../image_Edit/read1.png', 0)">
   <img src="../image_Edit/read2.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/read2.png', 1)">
   <img src="../image_Edit/edit.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/edit.png', 2)">
   <img src="../image_Edit/update.png" alt="Project Image 2" class="project-image" onclick="openLightbox('../image_Edit/update.png', 3)">
-
+  <br>  <br>   <br>
+</div>
 </div>
 
 
